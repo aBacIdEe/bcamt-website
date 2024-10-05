@@ -2,7 +2,7 @@ import { Carousel, Typography, Button } from "@material-tailwind/react";
  
 export function CarouselDefault() {
   return (
-    <Carousel transition={{ duration: 1 }} className="h-96 rounded-xl">
+    <Carousel transition={{ duration: 1 }} className="h-[420px]">
       <div className="relative h-full w-full">
         <img
           src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
@@ -25,14 +25,6 @@ export function CarouselDefault() {
             >
               Official website of the Bergen County Academies Math Team
             </Typography>
-            <div className="flex justify-center gap-2">
-              <Button size="lg" color="white">
-                Explore
-              </Button>
-              <Button size="lg" color="white" variant="text">
-                Gallery
-              </Button>
-            </div>
           </div>
         </div>
       </div>
@@ -58,14 +50,6 @@ export function CarouselDefault() {
             >
               High school students with with any interest and at any level of math knowledge
             </Typography>
-            <div className="flex gap-2">
-              <Button size="lg" color="white">
-                Explore
-              </Button>
-              <Button size="lg" color="white" variant="text">
-                Gallery
-              </Button>
-            </div>
           </div>
         </div>
       </div>

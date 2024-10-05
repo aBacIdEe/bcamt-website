@@ -13,7 +13,7 @@ export default function Home() {
         <main>
           <CarouselDefault />
 
-          <div className="mt-3 mx-auto w-full max-w-7xl px-8 grid grid-cols-1 gap-4">
+          <div className="mt-3 mx-auto w-full max-w-7xl grid grid-cols-1 gap-4">
             <div>
               <Typography className="text-3xl">Announcements</Typography>
             </div>
