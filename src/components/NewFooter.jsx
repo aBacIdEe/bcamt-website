@@ -15,7 +15,7 @@ const currentYear = new Date().getFullYear();
  
 export default function NewFooter() {
   return (
-    <footer className="relative w-full">
+    <footer className="relative w-full mt-8">
       <div className="mx-auto w-full max-w-7xl px-8">
         <div className="grid grid-cols-1 justify-around gap-4 md:grid-cols-2">
           <Typography></Typography> {/* This is a placeholder for spacing */}
