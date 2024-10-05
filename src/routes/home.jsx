@@ -4,7 +4,7 @@ import { Outlet, Link } from "react-router-dom";
 import picture1 from "../assets/images/Math_winner_2016.jpg";
 import { CarouselDefault } from "../components/Carousel.jsx";
 import { Typography } from "@material-tailwind/react";
-import { AnnouncementCard } from "../components/AnnouncementCard.jsx";
+import { Announcements } from "../components/Announcements.jsx";
 
 export default function Home() {
   return (
@@ -18,12 +18,7 @@ export default function Home() {
               <Typography className="text-3xl">Announcements</Typography>
             </div>
             <div>
-              <AnnouncementCard
-                text="The 13th annual JHMMC (for students in 8th grade or below) will
-              take place Sunday, October 20th, 2024."
-                link="https://register.capturepoint.com/reg/cat_program_list_detail.cfm?season_id=23385&program_id=2377159"
-                linkText="Register here"
-              />
+              <Announcements />
             </div>
             <div>
               <Typography className="text-3xl">
