@@ -49,7 +49,7 @@ export default function Home() {
               </Typography>
             </div>
             <div>
-              <Typography>Problem set submission</Typography>
+              <Typography className="text-3xl">Problem set submission</Typography>
             </div>
             <div>
               <Typography>
@@ -73,7 +73,7 @@ export default function Home() {
               </Typography>
             </div>
             <div>
-              <Typography>
+              <Typography className="text-3xl">
                 Registration
               </Typography>
               </div>

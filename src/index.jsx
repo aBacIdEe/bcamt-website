@@ -19,8 +19,6 @@ import './index.css';
 
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
-import NewFooter from "./components/NewFooter.jsx";
-
 
 const router = createBrowserRouter([
   {
@@ -46,7 +44,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/resources" element={<Resources />}></Route>
         <Route path="*" element={<p>Path not resolved</p>} />
       </Routes>
-      <NewFooter></NewFooter>
+      <Footer></Footer>
     </BrowserRouter>
     
   </React.StrictMode>

@@ -7,7 +7,7 @@ import {
     Button,
   } from "@material-tailwind/react";
    
-  export function AnnouncementCard( {text, link, linkText} ) {
+  export function AnnouncementCard( {text, link, linkText, expirationDate} ) {
     return (
       <Card className="m-3" color="blue-gray">
         <CardBody>
