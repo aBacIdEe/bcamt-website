@@ -3,11 +3,11 @@ import { Typography } from "@material-tailwind/react";
 const LINKS = [
   {
     title: "Connect",
-    items: ["a", "b", "c", "d"],
+    items: ["Bergen County Academies", "JHMMC Official Site", "JHMMC Facebook Page", "Follow us on Instagram!"],
   },
   {
-    title: "Contact",
-    items: ["a us", "absdf", "asdf", "wadf"],
+    title: "Contact Coaches",
+    items: ["Dr. Michael Abramson", "Mr. Jon Pinyan"],
   },
 ];
  
@@ -18,9 +18,7 @@ export default function NewFooter() {
     <footer className="relative w-full">
       <div className="mx-auto w-full max-w-7xl px-8">
         <div className="grid grid-cols-1 justify-around gap-4 md:grid-cols-2">
-          <Typography variant="h5" className="mb-6">
-            BCA Math Team
-          </Typography>
+          <Typography></Typography> {/* This is a placeholder for spacing */}
           <div className="grid grid-cols-3 justify-around gap-4">
             {LINKS.map(({ title, items }) => (
               <ul key={title}>

@@ -1,12 +1,10 @@
 import React, { StrictMode } from "react";
 import { Outlet, Link } from "react-router-dom";
 
-import picture1 from '../assets/images/Math_winner_2016.jpg';
+import picture1 from "../assets/images/Math_winner_2016.jpg";
 import { CarouselDefault } from "../components/Carousel.jsx";
-import {
-  Typography,
-} from "@material-tailwind/react";
-
+import { Typography } from "@material-tailwind/react";
+import { AnnouncementCard } from "../components/AnnouncementCard.jsx";
 
 export default function Home() {
   return (
@@ -15,10 +13,9 @@ export default function Home() {
         <main>
           <CarouselDefault />
 
- 
-
-          <div>
-            <blockquote>
+          <div className="mx-auto w-full max-w-7xl px-8">
+            <Typography>Announcements</Typography>
+            <AnnouncementCard>
               The 13th annual JHMMC (for students in 8th grade or below) will
               take place Sunday, October 20th, 2024.
               <a
@@ -27,7 +24,7 @@ export default function Home() {
               >
                 Register here!
               </a>
-            </blockquote>
+            </AnnouncementCard>
             <h4>
               Welcome to the BCA Math Team, one of the oldest and largest groups
               at the Academies.
