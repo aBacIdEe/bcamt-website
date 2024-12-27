@@ -3,7 +3,6 @@ import { Outlet, Link } from "react-router-dom";
 
 import picture1 from "../assets/images/Math_winner_2016.jpg";
 import { CarouselDefault } from "../components/Carousel.jsx";
-import { Typography } from "@material-tailwind/react";
 import { Announcements } from "../components/Announcements.jsx";
 
 export default function Home() {

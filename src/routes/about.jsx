@@ -1,5 +1,4 @@
 import React, { StrictMode } from "react";
-import { Typography } from "@material-tailwind/react";
 
 export default function About() {
   return (

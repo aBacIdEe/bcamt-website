@@ -1,5 +1,4 @@
 import React from "react";
-import { Navbar, Typography, IconButton } from "@material-tailwind/react";
 import { Outlet, Link } from "react-router-dom";
 
 export function StickyNavbar() {
