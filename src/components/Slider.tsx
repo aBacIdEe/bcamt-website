@@ -12,7 +12,7 @@ const slidesData: Slide[] = [
   {
     image: '/arml23group.jpg',
     title: 'Welcome to the BCA Math Team!',
-    subtitle: 'Official website of the Bergen County Academies Math Team',
+    subtitle: 'Unofficial website of the Bergen County Academies Math Team',
     alignment: 'center',
   },
   {
