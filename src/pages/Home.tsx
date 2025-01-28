@@ -1,5 +1,5 @@
 // src/pages/Home.tsx
-import React, { FC } from 'react';
+import { FC } from 'react';
 import Slider from '../components/Slider';
 import Announcements from '../components/Announcements';
 
