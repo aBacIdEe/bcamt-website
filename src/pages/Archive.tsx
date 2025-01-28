@@ -1,5 +1,5 @@
 // src/pages/Archive.tsx
-import React, { FC } from 'react';
+import { FC } from 'react';
 
 const Archive: FC = () => {
   return (

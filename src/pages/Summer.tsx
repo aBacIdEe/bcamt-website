@@ -1,5 +1,5 @@
 // src/pages/SummerLectures.tsx
-import React, { FC } from 'react';
+import { FC } from 'react';
 
 const SummerLectures: FC = () => {
   return (

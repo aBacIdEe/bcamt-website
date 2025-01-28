@@ -1,5 +1,5 @@
 // src/pages/Research.tsx
-import React, { FC } from 'react';
+import { FC } from 'react';
 
 const Research: FC = () => {
   return (

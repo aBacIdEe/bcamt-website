@@ -1,5 +1,5 @@
 // src/components/Header.tsx
-import React, { useState, FC } from 'react';
+import { useState, FC } from 'react';
 import { Link } from 'react-router-dom';
 
 const Header: FC = () => {

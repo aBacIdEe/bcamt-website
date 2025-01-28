@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 
 interface AnnouncementsProps {
   sheetId: string;    // e.g. "1AbCDEf12345xyz6789"
