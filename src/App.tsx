@@ -1,6 +1,8 @@
 // src/App.tsx
 import { FC } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Analytics } from "@vercel/analytics/react"
+
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -24,7 +26,7 @@ const App: FC = () => {
         <Route path="/research" element={<Research />} />
         <Route path="/summer" element={<SummerLectures />} />
         <Route path="/awards" element={<Awards />} />
-
+        <Analytics />
       </Routes>
       <Footer />
     </Router>
