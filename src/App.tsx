@@ -17,6 +17,7 @@ import Awards from './pages/Awards';
 const App: FC = () => {
   return (
     <Router>
+      <Analytics />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -26,7 +27,6 @@ const App: FC = () => {
         <Route path="/research" element={<Research />} />
         <Route path="/summer" element={<SummerLectures />} />
         <Route path="/awards" element={<Awards />} />
-        <Analytics />
       </Routes>
       <Footer />
     </Router>
