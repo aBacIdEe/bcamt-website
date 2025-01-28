@@ -10,13 +10,13 @@ interface Slide {
 
 const slidesData: Slide[] = [
   {
-    image: '/images/math_team_lecture_reduced.jpg',
+    image: '/arml23group.jpg',
     title: 'Welcome to the BCA Math Team!',
     subtitle: 'Official website of the Bergen County Academies Math Team',
     alignment: 'center',
   },
   {
-    image: '/images/jhmmc_volunteers_reduced.jpeg',
+    image: '/math_team_lecture_reduced.jpg',
     title: 'Open to any high schoolers',
     subtitle: 'High school students with any interest and at any level of math knowledge',
     alignment: 'left',

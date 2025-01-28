@@ -1,6 +1,7 @@
 // src/pages/Home.tsx
 import React, { FC } from 'react';
 import Slider from '../components/Slider';
+import Announcements from '../components/Announcements';
 
 const Home: FC = () => {
   return (
@@ -8,6 +9,11 @@ const Home: FC = () => {
       <Slider />
 
       <div className="container mx-auto px-4 py-6">
+        {/* silly announcements */}
+        <Announcements
+          sheetId={import.meta.env.VITE_GOOGLE_SHEET_ID}
+          apiKey={import.meta.env.VITE_GOOGLE_API_KEY}
+        />
         <blockquote className="border-l-4 border-blue-400 pl-4 my-4">
           There will be no math team meeting on Saturday, January 18...
         </blockquote>
