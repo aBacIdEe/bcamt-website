@@ -14,21 +14,6 @@ const Home: FC = () => {
           sheetId={import.meta.env.VITE_GOOGLE_SHEET_ID}
           apiKey={import.meta.env.VITE_GOOGLE_API_KEY}
         />
-        <blockquote className="border-l-4 border-blue-400 pl-4 my-4">
-          There will be no math team meeting on Saturday, January 18...
-        </blockquote>
-        <blockquote className="border-l-4 border-blue-400 pl-4 my-4">
-          We have put together an 
-          <a
-            href="https://docs.google.com/document/d/1Ym2HbfcXsf9_Soyq2wlcfK7wh7bNLEXAlVRVsbIZ_DM/edit?usp=sharing"
-            target="_blank"
-            rel="noreferrer"
-            className="underline text-blue-600 mx-1"
-          >
-            info sheet
-          </a>
-          on a number of <strong>summer programs</strong>...
-        </blockquote>
 
         <h4 className="text-xl font-bold my-4">
           Welcome to the BCA Math Team, one of the oldest and largest groups...

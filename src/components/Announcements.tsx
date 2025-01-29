@@ -1,9 +1,9 @@
 import { FC, useEffect, useState } from 'react';
 
 interface AnnouncementsProps {
-  sheetId: string;    // e.g. "1AbCDEf12345xyz6789"
-  apiKey: string;     // Your Google Sheets API key
-  range?: string;     // Optional. Default "Sheet1!A:A"
+  sheetId: string;
+  apiKey: string;
+  range?: string; // default "Sheet1!A:A"
 }
 
 const Announcements: FC<AnnouncementsProps> = ({
@@ -16,8 +16,6 @@ const Announcements: FC<AnnouncementsProps> = ({
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    // Construct the request URL
-    // Example: https://sheets.googleapis.com/v4/spreadsheets/<sheetId>/values/Sheet1!A:A?key=<apiKey>
     const url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${encodeURIComponent(
       range
     )}?key=${apiKey}`;
@@ -33,12 +31,8 @@ const Announcements: FC<AnnouncementsProps> = ({
         return response.json();
       })
       .then((data) => {
-        // data.values is usually an array of arrays, e.g. [ ["First announcement"], ["Second announcement"], ... ]
-        // We'll parse each row's first column (row[0]) into a string.
         if (data && data.values) {
-          // If there's a header row you want to skip, you can shift() it off
-          // data.values.shift();
-
+          // parse each row's first column (row[0]) as an announcement string
           const parsed = data.values.map((row: string[]) => row[0]);
           setAnnouncements(parsed);
         } else {
@@ -66,13 +60,17 @@ const Announcements: FC<AnnouncementsProps> = ({
       {announcements.length === 0 ? (
         <p>No announcements found.</p>
       ) : (
-        <ul className="list-disc list-inside space-y-2">
+        // Render each announcement as its own blockquote
+        <>
           {announcements.map((announcement, index) => (
-            <li key={index} className="leading-relaxed">
+            <blockquote
+              key={index}
+              className="border-l-4 border-blue-400 pl-4 my-4"
+            >
               {announcement}
-            </li>
+            </blockquote>
           ))}
-        </ul>
+        </>
       )}
     </div>
   );
