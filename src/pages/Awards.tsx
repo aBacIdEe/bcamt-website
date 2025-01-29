@@ -1,72 +1,16 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
+import AwardsSlider from '../components/AwardsSlider';
 // If you've already made a reusable Slider component, you can import it here.
 // Otherwise, we'll inline a simple slider example.
-
-interface Slide {
-  image: string;
-  alt?: string;
-}
-
-// Example slides data for the top slider
-const slidesData: Slide[] = [
-  { image: '/images/WMTC_Korea_hotel.jpg', alt: 'WMTC Korea Hotel' },
-  { image: '/images/wmtc_korea_bridge.jpg', alt: 'WMTC Korea Bridge' },
-  { image: '/images/wmtc_awards.jpg', alt: 'WMTC Awards' },
-  { image: '/images/arml23/arml23group.jpg', alt: 'ARML 2023 group' },
-];
-
-// A minimal manual slider (similar logic to prior examples).
-// If you have a more robust <Slider> component, feel free to swap this out.
-const SimpleSlider: FC = () => {
-  const [currentIndex, setCurrentIndex] = React.useState(0);
-
-  const nextSlide = () => {
-    setCurrentIndex((prev) => (prev === slidesData.length - 1 ? 0 : prev + 1));
-  };
-  const prevSlide = () => {
-    setCurrentIndex((prev) => (prev === 0 ? slidesData.length - 1 : prev - 1));
-  };
-
-  const currentSlide = slidesData[currentIndex];
-
-  return (
-    <div className="relative w-full h-[400px] overflow-hidden">
-      {/* Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center transition-all duration-500"
-        style={{ backgroundImage: `url(${currentSlide.image})` }}
-      />
-
-      {/* Navigation Buttons */}
-      <button
-        onClick={prevSlide}
-        className="absolute top-1/2 left-4 transform -translate-y-1/2
-                  bg-black bg-opacity-50 text-white rounded-full p-2 hover:bg-opacity-70 z-10"
-      >
-        <span className="material-icons">chevron_left</span>
-      </button>
-      <button
-        onClick={nextSlide}
-        className="absolute top-1/2 right-4 transform -translate-y-1/2
-                  bg-black bg-opacity-50 text-white rounded-full p-2 hover:bg-opacity-70 z-10"
-      >
-        <span className="material-icons">chevron_right</span>
-      </button>
-    </div>
-  );
-};
 
 const Awards: FC = () => {
   return (
     <div className="min-h-screen">
       {/* Top Slider */}
-      <SimpleSlider />
+      <AwardsSlider />
 
       <div className="container mx-auto px-4 py-6">
         <h3 className="flex items-center text-2xl font-bold mb-4">
-          <span className="material-icons mr-2" style={{ fontSize: '1.2em' }}>
-            trending_up
-          </span>
           Historical Results and Awards
         </h3>
 
@@ -145,7 +89,7 @@ const Awards: FC = () => {
         </div>
 
         {/* ARML */}
-        <h5 className="text-xl font-bold mb-2">American Regions Math League</h5>
+        <h5 className="text-xl font-bold mb-2">American Regions Math League (ARML)</h5>
         <div className="flex flex-col md:flex-row items-start md:items-center mb-4">
           <div className="md:w-1/3 p-2">
             <img
@@ -163,7 +107,7 @@ const Awards: FC = () => {
         </div>
 
         {/* Harvard/MIT, Princeton (PUMaC), etc. */}
-        <h5 className="text-xl font-bold mb-2">Harvard/MIT Math Tournament</h5>
+        <h5 className="text-xl font-bold mb-2">Harvard/MIT Math Tournament (HMMT)</h5>
         <p className="mb-4">
           One of the oldest college-run competitions... BCA finished second place in 2001, and took
           third place in 2010 and each year from 2002-05.
@@ -189,57 +133,55 @@ const Awards: FC = () => {
         <h5 className="text-xl font-bold mb-2">World Mathematics Team Championship (WMTC)</h5>
         <p className="mb-4">
           The math team has also competed at international events, including Beijing in 2013, Seoul
-          in 2016, Bulgaria in 2018, Seoul in 2019, and recently, Seoul in 2023...
-        </p>
-        <p className="italic mb-4">
-          As of summer 2024, we are currently gathering interest for this year's WMTC trip to Qatar,
-          so be on the watch!
+          in 2016, Bulgaria in 2018, Seoul in 2019, Seoul in 2023, and recently, Qatar!
         </p>
 
         {/* Embedded video: Google Drive or YouTube */}
-        <div className="my-8 text-center">
-          <div className="mx-auto w-full md:w-1/2 h-0 pb-[56.25%] relative">
-            <iframe
-              title="WMTC-2023-video"
-              className="absolute top-0 left-0 w-full h-full"
-              src="https://drive.google.com/file/d/1R1QDlS-mmeu416Bfomtr2L1V4cJTodd9/preview"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
+        <div className="flex flex-row gap-4">
+          <div className="flex-1 text-center">
+            <div className="w-full aspect-video relative">
+              <iframe
+                title="WMTC-2023-video"
+                className="absolute top-0 left-0 w-full h-full"
+                src="https://drive.google.com/file/d/1R1QDlS-mmeu416Bfomtr2L1V4cJTodd9/preview"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+            <p>
+              BCA Math Team at the 2023 WMTC. Thanks to Joy Ren for editing the video!<br />
+              Song: Gradation by 10cm
+            </p>
           </div>
-          <p>
-            BCA Math Team at the 2023 WMTC. Thanks to Joy Ren for editing the video!<br />
-            Song: Gradation by 10cm
-          </p>
-        </div>
 
-        <div className="my-8 text-center">
-          <div className="mx-auto w-full md:w-1/2 h-0 pb-[56.25%] relative">
-            <iframe
-              title="WMTC-2019-video"
-              className="absolute top-0 left-0 w-full h-full"
-              src="https://www.youtube.com/embed/P_52KoVpEkk"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
+          <div className="flex-1 text-center">
+            <div className="w-full aspect-video relative">
+              <iframe
+                title="WMTC-2019-video"
+                className="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/P_52KoVpEkk"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+            <p>
+              BCA Math Team at the 2019 WMTC. Special thanks to Vivian Tan for recording and editing
+              this video.
+            </p>
           </div>
-          <p>
-            BCA Math Team at the 2019 WMTC. Special thanks to Vivian Tan for recording and editing
-            this video.
-          </p>
-        </div>
 
-        <div className="my-8 text-center">
-          <div className="mx-auto w-full md:w-1/2 h-0 pb-[56.25%] relative">
-            <iframe
-              title="WMTC-2013-video"
-              className="absolute top-0 left-0 w-full h-full"
-              src="https://www.youtube.com/embed/vSVIq3SfkdY"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
+          <div className="flex-1 text-center">
+            <div className="w-full aspect-video relative">
+              <iframe
+                title="WMTC-2013-video"
+                className="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/vSVIq3SfkdY"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+            <p>BCA Math Team at the 2013 WMTC in Beijing.</p>
           </div>
-          <p>BCA Math Team at the 2013 WMTC in Beijing.</p>
         </div>
 
         <h5 className="text-xl font-bold mb-2">Lehigh</h5>

@@ -8,7 +8,7 @@ const Archive: FC = () => {
       <div
         className="h-60 bg-cover bg-center relative"
         style={{
-          backgroundImage: 'url("/images/mt_members_papers.JPG")',
+          backgroundImage: 'url("/mt_members_papers.JPG")',
           backgroundAttachment: 'fixed', // gives a parallax feel on some browsers
         }}
       >
@@ -19,9 +19,6 @@ const Archive: FC = () => {
 
       <div className="container mx-auto px-4 py-6">
         <h3 className="text-2xl font-bold flex items-center mb-4">
-          <span className="material-icons mr-2" style={{ fontSize: '1.2em' }}>
-            archive
-          </span>
           Archive
         </h3>
         <p className="mb-4">

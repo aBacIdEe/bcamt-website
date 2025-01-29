@@ -9,21 +9,11 @@ interface Slide {
 }
 
 const slidesData: Slide[] = [
-  {
-    image: '/arml23group.jpg',
-    title: 'Welcome to the BCA Math Team!',
-    subtitle: 'Unofficial website of the Bergen County Academies Math Team',
-    alignment: 'center',
-  },
-  {
-    image: '/math_team_lecture_reduced.jpg',
-    title: 'Open to any high schoolers',
-    subtitle: 'High school students with any interest and at any level of math knowledge',
-    alignment: 'left',
-  },
-];
+    { image: '/WMTC_Korea_hotel.jpg', title: 'WMTC Korea', subtitle: 'The team at the WMTC in Korea' },
+    { image: '/wmtc_korea_bridge.jpg', title: 'WMTC Korea', subtitle: 'The team at the WMTC in Korea' },
+  ];
 
-const Slider: FC = () => {
+const AwardsSlider: FC = () => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
 
   const nextSlide = () => {
@@ -81,4 +71,4 @@ const Slider: FC = () => {
   );
 };
 
-export default Slider;
+export default AwardsSlider;

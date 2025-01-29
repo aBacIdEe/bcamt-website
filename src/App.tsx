@@ -10,7 +10,6 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Archive from './pages/Archive';
 import Resources from './pages/Resources';
-import Research from './pages/Research';
 import SummerLectures from './pages/Summer';
 import Awards from './pages/Awards';
 
@@ -24,7 +23,6 @@ const App: FC = () => {
         <Route path="/about" element={<About />} />
         <Route path="/archive" element={<Archive />} />
         <Route path="/resources" element={<Resources />} />
-        <Route path="/research" element={<Research />} />
         <Route path="/summer" element={<SummerLectures />} />
         <Route path="/awards" element={<Awards />} />
       </Routes>

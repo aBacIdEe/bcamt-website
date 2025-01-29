@@ -197,7 +197,7 @@ const About: FC = () => {
                     </a>
                     <br />
                     <img
-                      src="/leadership_24-25/Alex.png"
+                      src="/leadership_24-25/Alex.jpg"
                       alt="Alex"
                       width="150"
                       className="mt-2"
