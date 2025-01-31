@@ -9,6 +9,10 @@ const Home: FC = () => {
       <HomeSlider />
 
       <div className="max-w-5xl mx-auto px-4 py-6">
+        <h4 className="text-xl font-bold my-4">
+          Announcements
+        </h4>
+
         {/* silly announcements */}
         <Announcements
           sheetId={import.meta.env.VITE_GOOGLE_SHEET_ID}

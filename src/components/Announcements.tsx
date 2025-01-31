@@ -56,7 +56,6 @@ const Announcements: FC<AnnouncementsProps> = ({
 
   return (
     <div className="container mx-auto p-4">
-      <h2 className="text-xl font-bold mb-4">Announcements</h2>
       {announcements.length === 0 ? (
         <p>No announcements found.</p>
       ) : (
