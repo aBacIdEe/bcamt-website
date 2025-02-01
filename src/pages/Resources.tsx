@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC } from "react";
 
 const Resources: FC = () => {
   return (
@@ -9,73 +9,42 @@ const Resources: FC = () => {
             LEFT SIDEBAR (TABLE OF CONTENTS)
         ======================= */}
         <aside className="hidden md:block md:col-span-1 border-r pr-4">
-          <h3 className="text-2xl font-bold mb-2">Contest Prep</h3>
+          <h3 className="text-2xl font-bold mb-2">Contributing to Math Team</h3>
           <ul className="list-disc list-inside space-y-2">
             <li>
-              <a href="#lecture" className="text-blue-600 underline">
+              <a href="#research" className="text-blue-600 underline">
                 Lecture Guide
+              </a>
+            </li>
+          </ul>
+          <h3 className="text-2xl font-bold mb-2">Contests</h3>
+          <ul className="list-disc list-inside space-y-2">
+            <li>
+              <a href="#resources-header" className="text-blue-600 underline">
+                Contests
+              </a>
+            </li>
+            <li>
+              <a href="#about-header" className="ml-4 text-blue-600 underline">
+                AMC
+              </a>
+            </li>
+            <li>
+              <a href="#format-header" className="ml-4 text-blue-600 underline">
+                AIME
+              </a>
+            </li>
+          </ul>
+          <h3 className="text-2xl font-bold mb-2">Higher Math</h3>
+          <ul className="list-disc list-inside space-y-2">
+            <li>
+              <a href="#research" className="text-blue-600 underline">
+                Topics
               </a>
             </li>
             <li>
               <a href="#math-programs" className="text-blue-600 underline">
                 Math Programs
-              </a>
-            </li>
-            <li>
-              <a href="#resources-header" className="text-blue-600 underline">
-                Sources
-              </a>
-            </li>
-            <li>
-              <a href="#amc-header" className="text-blue-600 underline">
-                The AMC
-              </a>
-            </li>
-            <li>
-              <a href="#about-header" className="ml-4 text-blue-600 underline">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#format-header" className="ml-4 text-blue-600 underline">
-                Format
-              </a>
-            </li>
-            <li>
-              <a
-                href="#structure-header"
-                className="ml-4 text-blue-600 underline"
-              >
-                Structure
-              </a>
-            </li>
-            <li>
-              <a
-                href="#registration-header"
-                className="ml-4 text-blue-600 underline"
-              >
-                Registration
-              </a>
-            </li>
-            <li>
-              <a
-                href="#strategy-header"
-                className="ml-4 text-blue-600 underline"
-              >
-                Strategies
-              </a>
-            </li>
-            <li>
-              <a
-                href="#prepare-header"
-                className="ml-4 text-blue-600 underline"
-              >
-                How to Prepare
-              </a>
-            </li>
-            <li>
-              <a href="#aime-header" className="text-blue-600 underline">
-                The AIME
               </a>
             </li>
           </ul>
@@ -85,23 +54,17 @@ const Resources: FC = () => {
             RIGHT CONTENT
         ======================= */}
         <div className="md:col-span-3">
+          <h3 className="text-2xl font-bold mb-2">Contributing to Math Team</h3>
           {/* ---------- Lecture Guide ---------- */}
           <section id="lecture" className="mb-8">
             <h4 className="text-xl font-bold flex items-center mb-2">
-              <span className="material-icons mr-2" style={{ fontSize: '1.2em' }}>
-                co_present
-              </span>
               Lecture Guide
             </h4>
-            <p className="text-gray-700 mb-2">
-              <span className="material-icons text-base align-middle mr-1">
-                access_time
-              </span>
-              Updated February 4, 2024
-            </p>
+            <p className="text-gray-700 mb-2">Updated February 4, 2024</p>
             <p className="mb-4">
-              For interested students, BCAMT leadership has created a guide to giving a lecture.
-              Please see Mr. Pinyan's email to sign up to lecture.
+              For interested students, BCAMT leadership has created a guide to
+              giving a lecture. Please see Mr. Pinyan's email to sign up to
+              lecture.
             </p>
             <ul className="list-disc list-inside mb-4">
               <li>
@@ -117,85 +80,18 @@ const Resources: FC = () => {
             </ul>
           </section>
 
-          {/* ---------- Math Summer Programs ---------- */}
-          <section id="math-programs" className="mb-8">
-            <h4 className="text-xl font-bold flex items-center mb-2">
-              <span
-                className="material-icons mr-2"
-                style={{ fontSize: '1.2em' }}
-              >
-                beach_access
-              </span>
-              Math Summer Programs
-            </h4>
-            <p className="text-gray-700 mb-2">
-              <span className="material-icons text-base align-middle mr-1">
-                access_time
-              </span>
-              Updated January 16, 2025
-            </p>
-            <p className="mb-4">
-              For interested students, BCAMT leadership has created a guide to math summer
-              enrichment programs.
-            </p>
-            <ul className="list-disc list-inside mb-4">
-              <li>
-                <a
-                  href="https://docs.google.com/document/d/1Ym2HbfcXsf9_Soyq2wlcfK7wh7bNLEXAlVRVsbIZ_DM/edit?usp=sharing"
-                  className="underline text-blue-600"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Math Summer Programs 2025 Brief
-                </a>
-              </li>
-            </ul>
-            <p className="mb-4">
-              Part of this information was also covered briefly during Session 1 of the 2023
-              Research Information Session. The presentation includes information about year-round
-              programs and those specific to research. For more general information, please see the{' '}
-              <a href="#research" className="underline text-blue-600">
-                Research
-              </a>{' '}
-              section below.
-            </p>
-            <ul className="list-disc list-inside mb-4">
-              <li>
-                <a
-                  href="https://youtu.be/5QfhhXytIRM?si=8hYhnAsrgZWGfxMD&t=944"
-                  className="underline text-blue-600"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Presentation on Math Programs (15:44 - 23:09)
-                </a>
-              </li>
-            </ul>
-          </section>
-
-          {/* ---------- Sources ---------- */}
+          <h3 className="text-2xl font-bold mb-2">Contest Prep</h3>
+          {/* ---------- Contests ---------- */}
           <section id="resources-header" className="mb-8">
             <h4 className="text-xl font-bold flex items-center mb-2">
-              <span
-                className="material-icons mr-2"
-                style={{ fontSize: '1.2em' }}
-              >
-                library_books
-              </span>
-              Sources
+              Contests
             </h4>
-            <p className="text-gray-700 mb-2">
-              <span className="material-icons text-base align-middle mr-1">
-                access_time
-              </span>
-              Updated January 11, 2020
-            </p>
+            <p className="text-gray-700 mb-2">Updated January 31, 2025</p>
             <p className="mb-4">
-              While students can refer to our archive to review or practice various topics, the
-              following resources are recommended for{' '}
+              The following resources are recommended for{" "}
               <a href="#amc-header" className="underline text-blue-600">
                 AMC
-              </a>{' '}
+              </a>{" "}
               preparation:
             </p>
             <ul className="list-disc list-inside mb-4 space-y-2">
@@ -257,7 +153,7 @@ const Resources: FC = () => {
                   rel="noreferrer"
                 >
                   AoPS Alcumus
-                </a>{' '}
+                </a>{" "}
                 (change the topic/difficulty!)
               </li>
               <li>
@@ -270,34 +166,16 @@ const Resources: FC = () => {
                   AoPS FTW!
                 </a>
               </li>
-              <li>
-                <a
-                  href="https://amc.edfinity.com/"
-                  className="underline text-blue-600"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  MAA’s old "AMC Advantage" problem sets
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://drive.google.com/file/d/0B8eQveLibOFESklfOXNmQm0zV1lNMDI4NzlucmRLdEJTbEFv/view?usp=sharing"
-                  className="underline text-blue-600"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  AMC Formula Sheet
-                </a>
-              </li>
               <li>Mr. Plotnick's Math Team CD (ask for a copy)</li>
             </ul>
 
             <p className="mb-4">
-              The following resources are recommended for{' '}
+              The AIME is the next round of the MAA series after the AMC. Doing
+              well on the AMC qualifies you for the AIME. The following
+              resources are recommended for{" "}
               <a href="#aime-header" className="underline text-blue-600">
                 AIME
-              </a>{' '}
+              </a>{" "}
               preparation:
             </p>
             <ul className="list-disc list-inside space-y-2 mb-4">
@@ -364,173 +242,51 @@ const Resources: FC = () => {
             </ul>
           </section>
 
-          {/* ---------- AMC Header ---------- */}
-          <section id="amc-header" className="mb-8">
-            <h4 className="text-xl font-bold mb-2">American Mathematics Competitions</h4>
-            <p className="text-gray-700 mb-2">
-              <span className="material-icons text-base align-middle mr-1">
-                access_time
-              </span>
-              Updated January 11, 2020
-            </p>
-          </section>
-
-          <section id="about-header" className="mb-8">
-            <h5 className="text-lg font-semibold flex items-center mb-2">
-              <span
-                className="material-icons mr-2"
-                style={{ fontSize: '1.3em' }}
-              >
-                info_outline
-              </span>
-              About
-            </h5>
+          <h3 className="text-2xl font-bold mb-2">Higher Math</h3>
+          {/* ---------- Math Summer Programs ---------- */}
+          <section id="math-programs" className="mb-8">
+            <h4 className="text-xl font-bold flex items-center mb-2">
+              Math Summer Programs
+            </h4>
+            <p className="text-gray-700 mb-2">Updated January 16, 2025</p>
             <p className="mb-4">
-              The{' '}
-              <a
-                href="https://www.maa.org/math-competitions"
-                className="underline text-blue-600"
-                target="_blank"
-                rel="noreferrer"
-              >
-                American Mathematics Competitions
-              </a>{' '}
-              (AMC) is a prestigious exam taken by students globally. If a student does well on the
-              AMC, they become eligible for the AIME.
+              For interested students, BCAMT leadership has created a guide to
+              math summer enrichment programs.
             </p>
-            <p className="mb-4">
-              Colleges such as MIT, Caltech, CMU, Brown, and Yale include optional spaces on their
-              applications for AMC or AIME scores.
-            </p>
-          </section>
-
-          <section id="format-header" className="mb-8">
-            <h5 className="text-lg font-semibold flex items-center mb-2">
-              <span
-                className="material-icons mr-2"
-                style={{ fontSize: '1.3em' }}
-              >
-                format_list_bulleted
-              </span>
-              Format
-            </h5>
-            <p>
-              The exam has 25 questions, 75 minutes, multiple-choice with 5 choices each. Correct
-              answers = 6 points, blank = 1.5 points, incorrect = 0. Scored out of 150.
-            </p>
-          </section>
-
-          <section id="structure-header" className="mb-8">
-            <h5 className="text-lg font-semibold flex items-center mb-2">
-              <span
-                className="material-icons mr-2"
-                style={{ fontSize: '1.3em' }}
-              >
-                assignment
-              </span>
-              Structure
-            </h5>
-            <p className="mb-4">
-              There are two types of AMCs: AMC 10 (for grade 10 & below) and AMC 12 (for grade 12 &
-              below). BCA rules: if ≤10th grade, must take AMC 10. If 11th or 12th, must take AMC 12.
-            </p>
-            <p className="mb-4">
-              There are "A" and "B" versions. You’re encouraged to take both. Cutoffs vary by year,
-              but ~120 on AMC 10 or ~100 on AMC 12 can qualify you for the AIME.
-            </p>
-          </section>
-
-          <section id="registration-header" className="mb-8">
-            <h5 className="text-lg font-semibold flex items-center mb-2">
-              <span
-                className="material-icons mr-2"
-                style={{ fontSize: '1.3em' }}
-              >
-                assignment_ind
-              </span>
-              Registration
-            </h5>
-            <p className="mb-4">
-              Sign-up details are typically sent via Dr. Abramson’s email. If ≤10th, sign up for AMC
-              10A/B; if ≥11th, sign up for AMC 12A/B. Do this ASAP!
-            </p>
-          </section>
-
-          <section id="strategy-header" className="mb-8">
-            <h5 className="text-lg font-semibold flex items-center mb-2">
-              <span
-                className="material-icons mr-2"
-                style={{ fontSize: '1.3em' }}
-              >
-                whatshot
-              </span>
-              Strategies
-            </h5>
-            <ul className="list-disc list-inside space-y-2 mb-4">
+            <ul className="list-disc list-inside mb-4">
               <li>
-                Use general test-taking skills: don’t rush, but don’t get stuck either. Keep moving,
-                come back to skipped problems.
-              </li>
-              <li>
-                Bring a watch (not a smartwatch). Allot time to check your work near the end.
-              </li>
-              <li>
-                If you can eliminate choices down to 2 or 3, guess. Otherwise, consider leaving it
-                blank for 1.5 points.
-              </li>
-              <li>
-                Bring geometry tools (rulers, protractors). Estimate from the diagram if stuck.
+                <a
+                  href="https://docs.google.com/document/d/1Ym2HbfcXsf9_Soyq2wlcfK7wh7bNLEXAlVRVsbIZ_DM/edit?usp=sharing"
+                  className="underline text-blue-600"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Math Summer Programs 2025 Brief
+                </a>
               </li>
             </ul>
-          </section>
-
-          <section id="prepare-header" className="mb-8">
-            <h5 className="text-lg font-semibold flex items-center mb-2">
-              <span className="material-icons mr-2" style={{ fontSize: '1.3em' }}>
-                book
-              </span>
-              How to Prepare
-            </h5>
             <p className="mb-4">
-              We’ve covered a lot in Math Team since the start of the year. Additional tips:
+              Part of this information was also covered briefly during Session 1
+              of the 2023 Research Information Session. The presentation
+              includes information about year-round programs and those specific
+              to research. For more general information, please see the{" "}
+              <a href="#research" className="underline text-blue-600">
+                Research
+              </a>{" "}
+              section below.
             </p>
-            <ul className="list-disc list-inside space-y-2 mb-4">
+            <ul className="list-disc list-inside mb-4">
               <li>
-                Study your weakest subjects using the resources above (especially Mr. Plotnick’s
-                links, AoPS).
-              </li>
-              <li>Practice problem-solving. Take timed tests to gain experience.</li>
-              <li>
-                After each practice, review mistakes thoroughly and keep a notebook of them. Review
-                that daily.
+                <a
+                  href="https://youtu.be/5QfhhXytIRM?si=8hYhnAsrgZWGfxMD&t=944"
+                  className="underline text-blue-600"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Presentation on Math Programs (15:44 - 23:09)
+                </a>
               </li>
             </ul>
-          </section>
-
-          <section id="aime-header" className="mb-8">
-            <h4 className="text-xl font-bold mb-2">American Invitational Mathematics Examination</h4>
-            <p className="text-gray-700 mb-2">
-              <span className="material-icons text-base align-middle mr-1">
-                access_time
-              </span>
-              Updated March 9, 2020
-            </p>
-            <h5
-              id="about-aime-header"
-              className="text-lg font-semibold flex items-center mb-2"
-            >
-              <span
-                className="material-icons mr-2"
-                style={{ fontSize: '1.3em' }}
-              >
-                info_outline
-              </span>
-              About
-            </h5>
-            <p>
-              The AIME is the next round of the MAA series after the AMC. Doing well on the AMC
-              qualifies you for the AIME.
-            </p>
           </section>
 
           {/* ======================
@@ -538,25 +294,26 @@ const Resources: FC = () => {
           ======================= */}
           <section id="research" className="mt-12">
             <h3 className="text-2xl font-bold flex items-center mb-4">
-              <span className="material-icons mr-2" style={{ fontSize: '1.2em' }}>
-                biotech
-              </span>
               Research
             </h3>
             <p className="mb-4">
-              Although the BCA Math Team is typically geared towards math competitions, we have
-              begun a new initiative on math research. Below are opportunities and info about math
-              research programs and competitions.
+              Although the BCA Math Team is typically geared towards math
+              competitions, we have begun a new initiative on math research.
+              Below are opportunities and info about math research programs and
+              competitions.
             </p>
 
             {/* Example: 2023 Research Information Session */}
             <div className="border-l-4 border-blue-400 pl-4 my-6">
-              <h4 className="text-lg font-semibold mb-2">2023 Research Information Session</h4>
+              <h4 className="text-lg font-semibold mb-2">
+                2023 Research Information Session
+              </h4>
               <p className="mb-4">
-                The BCA Math Team ran its first student-led informational session on Math Research
-                for Highschoolers on August 25th, 2023. The event had 6 sessions covering math
-                research basics, REU experiences, becoming a first author, etc. A playlist of all
-                recordings can be found{' '}
+                The BCA Math Team ran its first student-led informational
+                session on Math Research for Highschoolers on August 25th, 2023.
+                The event had 6 sessions covering math research basics, REU
+                experiences, becoming a first author, etc. A playlist of all
+                recordings can be found{" "}
                 <a
                   href="https://youtube.com/playlist?list=PL55wV471ewADGeTGKnP7xKYihztSbFYi7&si=l26DT8LMtwQqyKJL"
                   className="underline text-blue-600"
@@ -575,13 +332,18 @@ const Resources: FC = () => {
             <div className="mb-8">
               <h5 className="text-lg font-bold mb-2">Session 1 - Summary</h5>
               <p className="mb-4">
-                Krish Ramkumar discussed "What is Math Research?", ways to approach it, references
-                to MIT-PRIMES, RSI, PROMYS, etc.
+                Krish Ramkumar discussed "What is Math Research?", ways to
+                approach it, references to MIT-PRIMES, RSI, PROMYS, etc.
               </p>
               <h5 className="text-lg font-bold mb-2">Session 1 - Notes</h5>
               <ul className="list-disc list-inside space-y-2 mb-4">
-                <li>"Inquiry to gain knowledge" / scientific method vs. math approach</li>
-                <li>Ideas independent of reality, new results, logical deduction</li>
+                <li>
+                  "Inquiry to gain knowledge" / scientific method vs. math
+                  approach
+                </li>
+                <li>
+                  Ideas independent of reality, new results, logical deduction
+                </li>
               </ul>
               <h5 className="text-lg font-bold mb-2">Session 1 - Video</h5>
               <div className="flex justify-center mb-6">
