@@ -104,7 +104,7 @@ const Header: FC = () => {
       {/* Mobile Menu (dropdown) */}
       {isOpen && (
         <div className="absolute z-10 w-sm">
-          <div className="h-screen fixed bg-black text-white p-4">
+          <div className="h-[5000] fixed bg-black text-white p-4">
             <button
               type="button"
               onClick={toggleMenu}
