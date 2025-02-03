@@ -10,7 +10,7 @@ const Home: FC = () => {
       <div className="flex flex-col items-center">
       {/* Main content */}
       <div className="flex flex-col max-w-lg lg:max-w-3xl p-8">
-        <h4 className="text-xl font-bold my-4">Announcements</h4>
+        <h4 className="flex items-center text-2xl font-bold mb-4">Announcements</h4>
 
         {/* silly announcements */}
         <Announcements

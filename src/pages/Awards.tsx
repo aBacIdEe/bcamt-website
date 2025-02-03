@@ -8,8 +8,8 @@ const Awards: FC = () => {
     <div className="min-h-screen">
       {/* Top Slider */}
       <AwardsSlider />
-
-      <div className="container mx-auto px-4 py-6">
+      <div className="flex flex-col items-center">
+        <div className="flex flex-col max-w-lg lg:max-w-3xl p-8">
         <h3 className="flex items-center text-2xl font-bold mb-4">
           Historical Results and Awards
         </h3>
@@ -195,6 +195,7 @@ const Awards: FC = () => {
         <p className="mb-4">
           Other trips the Math Team has taken include Johns Hopkins, Stanford, and Berkeley.
         </p>
+      </div>
       </div>
     </div>
   );
