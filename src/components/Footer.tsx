@@ -1,5 +1,5 @@
 // src/components/Footer.tsx
-import { FC } from 'react';
+import { FC } from "react";
 
 const Footer: FC = () => {
   return (
@@ -13,11 +13,7 @@ const Footer: FC = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <img
-                src="bca_logo.png"
-                alt="BCA Logo"
-                className="h-32"
-              />
+              <img src="bca_logo.png" alt="BCA Logo" className="h-32" />
             </a>
           </div>
 
@@ -55,15 +51,17 @@ const Footer: FC = () => {
                   JHMMC Facebook page
                 </a>
               </li>
+              <li>
+                <a
+                  className="text-white underline"
+                  href="https://www.instagram.com/bca_mt/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <p>Follow us on Instagram!</p>
+                </a>
+              </li>
             </ul>
-            <a
-              className="text-white underline"
-              href="https://www.instagram.com/bca_mt/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <p>Follow us on Instagram!</p>
-            </a>
           </div>
 
           {/* Right Column */}
