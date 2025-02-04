@@ -58,7 +58,7 @@ const Header: FC = () => {
           <Link className="flex-1 group relative z-0 p-4" to="/summer">
             <span className="flex flex-col text-center items-center justify-center h-full overflow-hidden">
               <span className="relative z-10 text-transparent bg-white bg-clip-text transition-all duration-300 group-hover:bg-black">
-                Summer Lectures
+                Summer
               </span>
             </span>
             <span className="absolute inset-0 overflow-hidden">
